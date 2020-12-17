@@ -1,0 +1,57 @@
+:root {
+  --mdc-theme-primary: #6785f5;
+  --mdc-theme-secondary: #6785f5;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+.navbar {
+  position: relative;
+  background: rgba(103, 133, 245, 0.06);
+  padding: 0px;
+  box-shadow: 0px 1px 0px rgba(103, 133, 245, 1);
+  z-index: 100;
+}
+.selectchart {
+  float: left;
+}
+.navbar a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "arial", sans-serif;
+  color: #6785f5;
+  padding: 10px;
+  height: 100%;
+}
+.navbar a:hover {
+  background-color: var(--mdc-theme-text-hint-on-background);
+}
+.sidebar {
+  padding: 0;
+  background: rgba(103, 133, 245, 0.06);
+  box-shadow: 1px 0px rgba(103, 133, 245, 1);
+  height: 100%;
+}
+.main-row {
+  display: flex;
+}
+.mdc-slider:not(.mdc-slider--disabled) .mdc-slider__track-container {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+.mdc-drawer-app-content {
+  transition: padding-left 200ms ease-out;
+}
+/* .mdc-drawer
+  .mdc-drawer--open:not(.mdc-drawer--closing)
+  + .mdc-drawer-app-content {
+  margin-left: 0 !important;
+  padding-left: 256px;
+} */
